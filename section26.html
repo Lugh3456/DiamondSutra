@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diamond Sutra — Chapter 26 | 法身非相分</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="portal-bar">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="portal-bar-link">← The Dharma Gate · 法门无量</a>
+</div>
+<header class="section-header">
+  <h1>第二十六章 · 法身非相分</h1>
+  <p class="header-zh">金刚般若波罗蜜经</p>
+  <nav class="section-nav">
+    <a href="section25.html" class="back-link">← 第二十五章</a>
+    <a href="index.html" class="back-link">目录 Contents</a>
+    <a href="section27.html" class="back-link">第二十七章 →</a>
+  </nav>
+</header>
+<main class="section-container" id="main-content">
+  <section class="full-text">
+    <p id="chineseText">「须菩提！于意云何？可以三十二相观如来不？」须菩提言：「如是！如是！以三十二相观如来。」佛言：「须菩提！若以三十二相观如来者，转轮圣王则是如来。」须菩提白佛言：「世尊！如我解佛所说义，不应以三十二相观如来。」尔时，世尊而说偈言：「若以色见我，以音声求我，是人行邪道，不能见如来。」</p>
+    <button onclick="speak(document.getElementById('chineseText').innerText)" class="read-btn">🔊 聆听经文</button>
+  </section>
+  <section class="line-explanation">
+    <h2>逐句解释</h2>
+
+    <div class="explanation-card">
+      <p class="line"><strong>可以三十二相观如来不？……若以三十二相观如来者，转轮圣王则是如来</strong></p>
+      <p class="explanation-zh">佛陀先问须菩提，可以用三十二相来观如来吗？须菩提一时回答「可以」——但佛陀立刻指出错误：如果三十二相就是如来的标准，那么转轮圣王（古印度的理想君主，也具足三十二相）岂不也是如来？这说明：外在的特征，不能作为辨认真实的标准。</p>
+      <button class="toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">English ▾</button>
+      <div class="detail-content" hidden>
+        <p class="translation">If the thirty-two marks were sufficient to identify the Tathagata, then a wheel-turning king would also be a Tathagata</p>
+        <p class="explanation">The wheel-turning king (转轮圣王, chakravartin) is the ideal universal monarch of Indian tradition — a being who, like a Buddha, is said to bear the thirty-two marks of a great person. The Buddha uses this as a reductio ad absurdum: if the marks are the criterion, then any person with the marks qualifies — but clearly a powerful king is not a Buddha. The marks are external; what distinguishes a Buddha is internal — the complete dissolution of ego, the full awakening to the nature of reality. External form, however impressive, cannot carry that distinction.</p>
+      </div>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>若以色见我，以音声求我，是人行邪道，不能见如来</strong></p>
+      <p class="explanation-zh">这是《金刚经》最著名的偈颂之一：如果用形色来寻找我，用声音来追求我，这个人走的是邪路，不能见到如来。「色」是眼睛看到的外形，「音声」是耳朵听到的声音。如来不在任何感官可以抓住的地方——它是感官之后的那个，是觉知本身。</p>
+      <button class="toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">English ▾</button>
+      <div class="detail-content" hidden>
+        <p class="translation">Whoever seeks me through form, or pursues me through sound, is walking a deviant path and cannot see the Tathagata</p>
+        <p class="explanation">This verse is one of the most quoted in all Buddhist literature, and it is deliberately shocking. Form (色) includes not just physical appearance but all visual perception — and by extension, all sensory experience. Sound (音声) represents the entire domain of language, doctrine, and intellectual content. The verse says: looking for the Buddha through any of these is the wrong path. The Tathagata is not an object of any sense faculty, not a concept in any doctrine. It is the nature of awareness itself — which is what is doing the looking, not what is being looked at. You cannot find it by searching; you can only recognise it by stopping the search.</p>
+      </div>
+    </div>
+
+  </section>
+  <section class="summary">
+    <h2>总结 · Summary</h2>
+    <p class="summary-zh">第二十六章以一首偈颂达到高峰：「若以色见我，以音声求我，是人行邪道，不能见如来。」如来不在任何形相或声音之中。用感官去寻找佛，永远找不到；因为那个在寻找的觉知，本身就是你与佛最近的地方。如来不是被找到的对象，而是一切寻找的基础。</p>
+    <button class="toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">English ▾</button>
+    <div class="detail-content" hidden>
+      <p class="explanation">Chapter 26 climaxes with the sutra's most famous verse: whoever seeks the Tathagata through form or sound is walking the wrong path. The Buddha is not an object of sensory experience or intellectual concept. The awareness doing the seeking is closer to the Tathagata than any object the seeking might find. The Buddha is not to be found — because the seeking mind is already what is being looked for. Recognition, not acquisition, is the movement.</p>
+    </div>
+  </section>
+</main>
+<script>
+function toggleDetail(btn) {
+  var content = btn.nextElementSibling;
+  var isHidden = content.hidden;
+  content.hidden = !isHidden;
+  btn.setAttribute('aria-expanded', isHidden);
+  if (isHidden) { btn.textContent = btn.textContent.replace('▾', '▴'); }
+  else { btn.textContent = btn.textContent.replace('▴', '▾'); }
+}
+function speak(text) {
+  const synth = window.speechSynthesis;
+  function loadAndSpeak() {
+    const voices = synth.getVoices();
+    const preferred = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+    const msg = new SpeechSynthesisUtterance(text);
+    msg.lang = "zh-CN";
+    if (preferred) msg.voice = preferred;
+    msg.rate = 0.9; msg.pitch = 1;
+    synth.speak(msg);
+  }
+  if (speechSynthesis.getVoices().length === 0) { speechSynthesis.onvoiceschanged = loadAndSpeak; }
+  else { loadAndSpeak(); }
+}
+</script>
+<footer class="site-footer">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="footer-portal-link">The Dharma Gate · 法门无量</a>
+  <p>&copy; 2026 Diamond Sutra Study</p>
+</footer>
+</body>
+</html>
