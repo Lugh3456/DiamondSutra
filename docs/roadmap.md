@@ -1,0 +1,47 @@
+# Roadmap — Diamond Sutra
+
+- [x] Build index.html with 32 chapter cards
+- [x] Build section1.html — 法会因由分
+- [x] Build section2.html — 善现启请分
+- [x] Build section3.html — 大乘正宗分
+- [x] Build section4.html — 妙行无住分
+- [x] Build section5.html — 如理实见分
+- [x] Build section6.html — 正信希有分
+- [x] Build section7.html — 无得无说分
+- [x] Build section8.html — 依法出生分
+- [x] Build section9.html — 一相无相分
+- [x] Build section10.html — 庄严净土分
+- [x] Build section11.html — 无为福胜分
+- [x] Build section12.html — 尊重正教分
+- [x] Build section13.html — 如法受持分
+- [x] Build section14.html — 离相寂灭分
+- [x] Build section15.html — 持经功德分
+- [x] Build section16.html — 能净业障分
+- [x] Build section17.html — 究竟无我分
+- [x] Build section18.html — 一体同观分
+- [x] Build section19.html — 法界通化分
+- [x] Build section20.html — 离色离相分
+- [x] Build section21.html — 非说所说分
+- [x] Build section22.html — 无法可得分
+- [x] Build section23.html — 净心行善分
+- [x] Build section24.html — 福智无比分
+- [x] Build section25.html — 化无所化分
+- [x] Build section26.html — 法身非相分
+- [x] Build section27.html — 无断无灭分
+- [x] Build section28.html — 不受不贪分
+- [x] Build section29.html — 威仪寂静分
+- [x] Build section30.html — 一合理相分
+- [x] Build section31.html — 知见不生分
+- [x] Build section32.html — 应化非真分
+- [x] Create CSS (red/saffron design tokens, shared with HeartSutra)
+- [x] Add collapsible bilingual layout (Chinese default, expandable English details)
+- [x] Short concept-focused Chinese explanations
+- [x] Bilingual summary with expand/collapse per chapter
+- [x] Speech synthesis (🔊 聆听经文) per chapter
+- [x] Remove English subtitle from index chapter cards
+- [x] Project docs (readme, architecture, ai-context, roadmap)
+- [ ] Create GitHub repository: DiamondSutra
+- [ ] Deploy to GitHub Pages — https://lugh3456.github.io/DiamondSutra/
+- [ ] Verify on mobile (iOS Safari, Android Chrome)
+- [ ] Activate card on DharmaGate portal hub
+- [ ] Deploy updated DharmaGate portal
