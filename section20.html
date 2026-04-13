@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diamond Sutra — Chapter 20 | 离色离相分</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="portal-bar">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="portal-bar-link">← The Dharma Gate · 法门无量</a>
+</div>
+<header class="section-header">
+  <h1>第二十章 · 离色离相分</h1>
+  <p class="header-zh">金刚般若波罗蜜经</p>
+  <nav class="section-nav">
+    <a href="section19.html" class="back-link">← 第十九章</a>
+    <a href="index.html" class="back-link">目录 Contents</a>
+    <a href="section21.html" class="back-link">第二十一章 →</a>
+  </nav>
+</header>
+<main class="section-container" id="main-content">
+  <section class="full-text">
+    <p id="chineseText">「须菩提！于意云何？佛可以具足色身见不？」「不也，世尊！如来不应以具足色身见。何以故？如来说具足色身，即非具足色身，是名具足色身。」「须菩提！于意云何？如来可以具足诸相见不？」「不也，世尊！如来不应以具足诸相见。何以故？如来说诸相具足，即非具足，是名诸相具足。」</p>
+    <button onclick="speak(document.getElementById('chineseText').innerText)" class="read-btn">🔊 聆听经文</button>
+  </section>
+  <section class="line-explanation">
+    <h2>逐句解释</h2>
+
+    <div class="explanation-card">
+      <p class="line"><strong>佛可以具足色身见不？……如来说具足色身，即非具足色身，是名具足色身</strong></p>
+      <p class="explanation-zh">「具足色身」是指佛陀圆满庄严的报身——三十二相、八十种好的完美色身。须菩提回答：不能以此见如来。为什么？因为这个圆满色身，也是「A即非A」的结构：它不是一个固定存在的「具足色身」，所以才被叫做具足色身。</p>
+      <button class="toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">English ▾</button>
+      <div class="detail-content" hidden>
+        <p class="translation">Can the Buddha be seen through his perfect physical form? No — the perfect form is not perfect form, therefore it is called perfect form</p>
+        <p class="explanation">The sambhogakaya (报身) — the Buddha's reward body of perfect physical marks — is a traditional object of devotion and visualisation in Mahayana Buddhism. Meditators spend years cultivating mental images of the Buddha's thirty-two marks and eighty secondary features. Yet the sutra says: this too cannot be used to 'find' the real Buddha. Even the most perfect physical form is impermanent, conditioned, and empty of inherent existence. Devotion through form is a means — not the destination. The Buddha's true nature is not a form, however perfect.</p>
+      </div>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>如来可以具足诸相见不？……如来说诸相具足，即非具足，是名诸相具足</strong></p>
+      <p class="explanation-zh">「具足诸相」是指一切功德相、境界相——不只是身体，而是所有可以看到的殊胜特征。佛陀问：能以这些「相」来见如来吗？答案同样是否定的。因为「诸相具足」也是「非具足」——一切相都是条件的聚合，没有固定的本质。</p>
+      <button class="toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">English ▾</button>
+      <div class="detail-content" hidden>
+        <p class="translation">Can the Tathagata be seen through the fullness of all marks? No — the fullness of marks is not fullness, therefore it is called the fullness of marks</p>
+        <p class="explanation">This second question extends from physical form to all marks whatsoever — not just the body but all perceivable qualities of enlightenment. The answer is the same. Any quality you identify as 'the Buddha's' — his compassion, his wisdom, his radiance, his silence — all of these, however genuine, are appearances within awareness, not the ground of awareness itself. To grasp any mark, even an enlightened one, as the basis of recognition is to be one step removed from what is actually being pointed at. The sutra is relentless in this: no mark leads to the Buddha. Only releasing marks does.</p>
+      </div>
+    </div>
+
+  </section>
+  <section class="summary">
+    <h2>总结 · Summary</h2>
+    <p class="summary-zh">第二十章简短但有力：无论是佛陀圆满的色身，还是一切的功德相，都不是见如来的真正途径。因为所有的相，无论多么殊胜，都是条件聚合的产物，都是空的。如来的真实本质，超越了一切可以被感知的相。执着于任何相——哪怕是最美好、最圆满的相——都是在追逐月亮的倒影。</p>
+    <button class="toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">English ▾</button>
+    <div class="detail-content" hidden>
+      <p class="explanation">Chapter 20 is brief and decisive: neither the Buddha's perfect physical form nor the fullness of all his marks can serve as the basis for encountering the real Tathagata. All marks, however exalted, are conditioned appearances — empty of inherent existence. The Buddha's true nature transcends every perceivable quality. To grasp any mark, even the most sacred, is to chase a reflection. Only releasing marks opens the way.</p>
+    </div>
+  </section>
+</main>
+<script>
+function toggleDetail(btn) {
+  var content = btn.nextElementSibling;
+  var isHidden = content.hidden;
+  content.hidden = !isHidden;
+  btn.setAttribute('aria-expanded', isHidden);
+  if (isHidden) { btn.textContent = btn.textContent.replace('▾', '▴'); }
+  else { btn.textContent = btn.textContent.replace('▴', '▾'); }
+}
+function speak(text) {
+  const synth = window.speechSynthesis;
+  function loadAndSpeak() {
+    const voices = synth.getVoices();
+    const preferred = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+    const msg = new SpeechSynthesisUtterance(text);
+    msg.lang = "zh-CN";
+    if (preferred) msg.voice = preferred;
+    msg.rate = 0.9; msg.pitch = 1;
+    synth.speak(msg);
+  }
+  if (speechSynthesis.getVoices().length === 0) { speechSynthesis.onvoiceschanged = loadAndSpeak; }
+  else { loadAndSpeak(); }
+}
+</script>
+<footer class="site-footer">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="footer-portal-link">The Dharma Gate · 法门无量</a>
+  <p>&copy; 2026 Diamond Sutra Study</p>
+</footer>
+</body>
+</html>
