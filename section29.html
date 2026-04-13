@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diamond Sutra — Chapter 29 | 威仪寂静分</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="portal-bar">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="portal-bar-link">← The Dharma Gate · 法门无量</a>
+</div>
+<header class="section-header">
+  <h1>第二十九章 · 威仪寂静分</h1>
+  <p class="header-zh">金刚般若波罗蜜经</p>
+  <nav class="section-nav">
+    <a href="section28.html" class="back-link">← 第二十八章</a>
+    <a href="index.html" class="back-link">目录 Contents</a>
+    <a href="section30.html" class="back-link">第三十章 →</a>
+  </nav>
+</header>
+<main class="section-container" id="main-content">
+  <section class="full-text">
+    <p id="chineseText">「须菩提！若有人言：如来若来若去、若坐若卧，是人不解我所说义。何以故？如来者，无所从来，亦无所去，故名如来。」</p>
+    <button onclick="speak(document.getElementById('chineseText').innerText)" class="read-btn">🔊 聆听经文</button>
+  </section>
+  <section class="line-explanation">
+    <h2>逐句解释</h2>
+
+    <div class="explanation-card">
+      <p class="line"><strong>若有人言：如来若来若去、若坐若卧，是人不解我所说义</strong></p>
+      <p class="explanation-zh">如果有人认为如来真的「来了」又「去了」，真的「坐下来」又「躺下去」——这个人误解了如来的本质。他把「如来」理解成了一个在空间中移动、在时间中经历不同状态的物理存在。但如来的真实本质，超越了来去和动静的分别。</p>
+      <button class="toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">English ▾</button>
+      <div class="detail-content" hidden>
+        <p class="translation">If someone says the Tathagata comes, goes, sits, or lies down — that person does not understand what I have said</p>
+        <p class="explanation">This may seem to contradict Chapter 1, which described the Buddha walking, eating, sitting, and washing his feet with great care. The resolution is this: the physical activities of the historical Buddha are real — he walked and ate and sat. But the 'Tathagata' in the deepest sense — the dharmakaya, the awakened nature — does not 'go' anywhere when the body moves. Awareness itself has no location, no movement, no posture. Mistaking the Tathagata for a physical traveller is like mistaking the sky for the clouds that move through it.</p>
+      </div>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>如来者，无所从来，亦无所去，故名如来</strong></p>
+      <p class="explanation-zh">「如来」这个名字本身就是解释：「如」是「如此」「如实」，「来」是「到来」。「如来」的意思是：如此而来，如此而去——来去自然，不执着于任何固定的状态或位置。更深的理解是：如来的本质，无处不在，无时不在，没有真正的「来」也没有真正的「去」。</p>
+      <button class="toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">English ▾</button>
+      <div class="detail-content" hidden>
+        <p class="translation">The Tathagata has nowhere from which it comes and nowhere to which it goes — therefore it is called Tathagata</p>
+        <p class="explanation">The name 'Tathagata' (如来) is itself a teaching. 'Tatha' means 'thus' or 'as it is'; 'gata/agata' means 'gone' or 'come.' The Tathagata is 'thus-come' or 'thus-gone' — existing in perfect accordance with how things actually are, without any addition or subtraction. Such a being has no fixed origin and no fixed destination — because the nature of reality itself has no origin and no destination. It simply is, in each moment, completely and fully. This is the description of awakened presence: not located in time and space, but fully alive within it.</p>
+      </div>
+    </div>
+
+  </section>
+  <section class="summary">
+    <h2>总结 · Summary</h2>
+    <p class="summary-zh">第二十九章只有一段，但深度极高：如来的本质，不是一个在空间中来去、在时间中坐卧的物理存在。「如来」的名字本身就是教义——如实而来，如实而去，无固定的来处，也无固定的去处。如来的真实本质，是超越来去、动静、时空限制的觉知本身。</p>
+    <button class="toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">English ▾</button>
+    <div class="detail-content" hidden>
+      <p class="explanation">Chapter 29 is brief but profound: the Tathagata does not truly come or go, sit or lie down — because the awakened nature has no location, no movement, no fixed point of origin or destination. The name 'Tathagata' is its own teaching: thus-come, thus-gone — in perfect accordance with reality as it is, without grasping or rejecting. The sky does not move when clouds pass through it. Awakened awareness does not travel when the body walks.</p>
+    </div>
+  </section>
+</main>
+<script>
+function toggleDetail(btn) {
+  var content = btn.nextElementSibling;
+  var isHidden = content.hidden;
+  content.hidden = !isHidden;
+  btn.setAttribute('aria-expanded', isHidden);
+  if (isHidden) { btn.textContent = btn.textContent.replace('▾', '▴'); }
+  else { btn.textContent = btn.textContent.replace('▴', '▾'); }
+}
+function speak(text) {
+  const synth = window.speechSynthesis;
+  function loadAndSpeak() {
+    const voices = synth.getVoices();
+    const preferred = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+    const msg = new SpeechSynthesisUtterance(text);
+    msg.lang = "zh-CN";
+    if (preferred) msg.voice = preferred;
+    msg.rate = 0.9; msg.pitch = 1;
+    synth.speak(msg);
+  }
+  if (speechSynthesis.getVoices().length === 0) { speechSynthesis.onvoiceschanged = loadAndSpeak; }
+  else { loadAndSpeak(); }
+}
+</script>
+<footer class="site-footer">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="footer-portal-link">The Dharma Gate · 法门无量</a>
+  <p>&copy; 2026 Diamond Sutra Study</p>
+</footer>
+</body>
+</html>
