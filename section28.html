@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diamond Sutra — Chapter 28 | 不受不贪分</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="portal-bar">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="portal-bar-link">← The Dharma Gate · 法门无量</a>
+</div>
+<header class="section-header">
+  <h1>第二十八章 · 不受不贪分</h1>
+  <p class="header-zh">金刚般若波罗蜜经</p>
+  <nav class="section-nav">
+    <a href="section27.html" class="back-link">← 第二十七章</a>
+    <a href="index.html" class="back-link">目录 Contents</a>
+    <a href="section29.html" class="back-link">第二十九章 →</a>
+  </nav>
+</header>
+<main class="section-container" id="main-content">
+  <section class="full-text">
+    <p id="chineseText">「须菩提！若菩萨以满恒河沙等世界七宝布施；若复有人知一切法无我，得成于忍，此菩萨胜前菩萨所得功德。须菩提！以诸菩萨不受福德故。」须菩提白佛言：「世尊！云何菩萨不受福德？」「须菩提！菩萨所作福德，不应贪著，是故说不受福德。」</p>
+    <button onclick="speak(document.getElementById('chineseText').innerText)" class="read-btn">🔊 聆听经文</button>
+  </section>
+  <section class="line-explanation">
+    <h2>逐句解释</h2>
+
+    <div class="explanation-card">
+      <p class="line"><strong>知一切法无我，得成于忍，此菩萨胜前菩萨所得功德</strong></p>
+      <p class="explanation-zh">「知一切法无我，得成于忍」——深刻领悟一切法无我，并且能够安住于此、不动摇（「忍」在这里是「无生法忍」，能安住于无生的实相而不退转）——这样的菩萨，其功德超过了用恒河沙数个世界七宝布施的菩萨。因为对空性的直接体证，是一切功德的根源。</p>
+      <button class="toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">English ▾</button>
+      <div class="detail-content" hidden>
+        <p class="translation">Knowing that all dharmas are without self, and achieving patient acceptance of this — this bodhisattva's merit surpasses the other's</p>
+        <p class="explanation">The 'patient acceptance' (忍, anutpattika-dharma-ksanti in Sanskrit) referred to here is specifically 'non-arising patience' — the capacity to abide stably in the recognition that all phenomena arise without inherent existence, without being shaken by this insight. It is one thing to intellectually accept the idea of no-self; it is another to have it so thoroughly integrated that it does not create fear, confusion, or reactivity. This stable realisation — being at peace with the groundlessness of existence — is presented as the pinnacle of bodhisattva practice.</p>
+      </div>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>菩萨所作福德，不应贪著，是故说不受福德</strong></p>
+      <p class="explanation-zh">须菩提问：什么叫「不受福德」？佛陀回答：菩萨做了善事、积累了福德，但不执着于这些福德，不贪求这些福德的结果。做了就做了，不把它变成「我的成就」、「我的功德」。这种不贪着，才是真正的无我行。</p>
+      <button class="toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">English ▾</button>
+      <div class="detail-content" hidden>
+        <p class="translation">A bodhisattva does not cling to merit — therefore it is said they do not receive merit</p>
+        <p class="explanation">This is a practical clarification of a potentially confusing statement. 'Not receiving merit' does not mean merit doesn't arise — it clearly does. It means the bodhisattva does not grasp at the merit, does not keep score, does not convert it into a spiritual identity or a sense of superiority. The action is complete in itself. The giving is its own fulfilment. To receive merit and immediately let it go — to act generously and not hold the act as 'mine' — is the lived expression of egoless action. It is the most natural and most difficult thing in the world.</p>
+      </div>
+    </div>
+
+  </section>
+  <section class="summary">
+    <h2>总结 · Summary</h2>
+    <p class="summary-zh">第二十八章的核心是「不受福德」：菩萨做了善事、积累了功德，但不贪着、不执取这些功德作为「我的成就」。做了就放下。这种无我的行动，比任何数量的有为布施都更殊胜。能够安住于「一切法无我」而不动摇，是菩萨行的最高境界。功德的真正价值，在于它的无私；一旦执取，它就失去了最深的意义。</p>
+    <button class="toggle-btn" onclick="toggleDetail(this)" aria-expanded="false">English ▾</button>
+    <div class="detail-content" hidden>
+      <p class="explanation">Chapter 28 teaches non-grasping at merit: the bodhisattva acts generously, accumulates merit, and immediately releases it — not converting it into a spiritual trophy or an identity. The action is complete in itself. Abiding stably in the recognition that all dharmas are without self — without being shaken — is the highest bodhisattva practice. The value of merit lies in its selflessness; the moment it is grasped, its deepest quality is lost.</p>
+    </div>
+  </section>
+</main>
+<script>
+function toggleDetail(btn) {
+  var content = btn.nextElementSibling;
+  var isHidden = content.hidden;
+  content.hidden = !isHidden;
+  btn.setAttribute('aria-expanded', isHidden);
+  if (isHidden) { btn.textContent = btn.textContent.replace('▾', '▴'); }
+  else { btn.textContent = btn.textContent.replace('▴', '▾'); }
+}
+function speak(text) {
+  const synth = window.speechSynthesis;
+  function loadAndSpeak() {
+    const voices = synth.getVoices();
+    const preferred = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+    const msg = new SpeechSynthesisUtterance(text);
+    msg.lang = "zh-CN";
+    if (preferred) msg.voice = preferred;
+    msg.rate = 0.9; msg.pitch = 1;
+    synth.speak(msg);
+  }
+  if (speechSynthesis.getVoices().length === 0) { speechSynthesis.onvoiceschanged = loadAndSpeak; }
+  else { loadAndSpeak(); }
+}
+</script>
+<footer class="site-footer">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="footer-portal-link">The Dharma Gate · 法门无量</a>
+  <p>&copy; 2026 Diamond Sutra Study</p>
+</footer>
+</body>
+</html>
