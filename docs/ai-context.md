@@ -4,7 +4,7 @@
 
 A static mini site for studying the Diamond Sutra (金刚般若波罗蜜经), one of nine scripture sites under The Dharma Gate portal. Same architecture as HeartSutra — HTML + external CSS, no frameworks, 32 section pages.
 
-## Current state (as of 2026-04-13)
+## Current state (as of 2026-04-28)
 
 - 32 section pages: one per chapter of the traditional 32-chapter Kumārajīva structure
 - Index page: 32-card chapter grid, two lines per card (chapter number + Chinese title)
@@ -89,6 +89,12 @@ DiamondSutra/
 ## Portal link
 
 Portal bar and footer both link to: `https://lugh3456.github.io/DharmaGate/`
+
+## Audit system
+
+`docs/audit-config.json` + `docs/reference.py` power the annotated-text-audit skill.
+Run: `python3 <skill>/scripts/audit_content.py <project_folder>`
+As of 2026-04-28: **all 32 sections pass** (0 content issues, 0 order issues).
 
 ## GitHub repo
 
