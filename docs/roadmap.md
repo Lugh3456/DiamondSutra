@@ -40,8 +40,11 @@
 - [x] Speech synthesis (🔊 聆听经文) per chapter
 - [x] Remove English subtitle from index chapter cards
 - [x] Project docs (readme, architecture, ai-context, roadmap)
-- [ ] Create GitHub repository: DiamondSutra
-- [ ] Deploy to GitHub Pages — https://lugh3456.github.io/DiamondSutra/
+- [x] Create GitHub repository: DiamondSutra
+- [x] Deploy to GitHub Pages — https://lugh3456.github.io/DiamondSutra/
 - [ ] Verify on mobile (iOS Safari, Android Chrome)
-- [ ] Activate card on DharmaGate portal hub
-- [ ] Deploy updated DharmaGate portal
+- [x] Activate card on DharmaGate portal hub
+- [x] Deploy updated DharmaGate portal
+- [x] Add annotated-text audit system (audit-config.json + reference.py in docs/)
+- [x] Full annotation coverage pass — all 32 sections pass content audit (0 issues)
+- [ ] Deploy annotation updates to GitHub Pages
